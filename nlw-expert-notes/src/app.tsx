@@ -2,6 +2,8 @@ import logo from './assents/Logo-nlw.svg'
 import { NewNoteCard } from './components/new-note-card'
 import { NoteCard } from './components/note-card'
 
+
+
 export function App() {
   return (
     <div className="mx-auto max-w-6xl my-12 space-y-6">
@@ -20,9 +22,16 @@ export function App() {
       
     <NewNoteCard></NewNoteCard>
 
-     <NoteCard></NoteCard>
-     <NoteCard></NoteCard>
-     <NoteCard></NoteCard>
+     <NoteCard
+     note={{
+      date: new Date(),
+      content:  'hello world'
+    }}
+     
+     
+     ></NoteCard>
+     {/* <NoteCard></NoteCard>
+     <NoteCard></NoteCard> */}
 
     </div>
     
